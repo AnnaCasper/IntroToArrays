@@ -6,13 +6,14 @@
 <script>
 var myArray = [23, 38, 14, -3, 0, 14, 9, 103, 0, 56];
 function swap(pos1, pos2) {
-
-
-        // Swap code goes here...
+	var temp = myArray [pos1];
+	myArray [pos1] = myArray [pos2];
+	myArray [pos2] = temp;
 
 
 	update("modified");
 }
+
 
 function init() {
 	update("original");

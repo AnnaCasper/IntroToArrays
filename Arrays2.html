@@ -8,12 +8,12 @@ var myArray = [23, 38, 14, -3, 0, 14, 9, 103, 0, 56];
 function swap(pos1, pos2) {
 	var temp = myArray[pos1];
 	myArray[pos1] = myArray[pos2];
-	myArray[pos2] = temp;	
+	myArray[pos2] = temp;
 }
 function bubbleSort() {
 	for (i = 0; i < myArray.length - 1; i++) {
-		for (j = i; j < myArray.length; j++) {
-			if (myArray[i] > myArray[j]) { 
+		for (j = i + 1; j < myArray.length; j++) {
+			if (myArray[i] > myArray[j]) {
 				swap(i, j);
 			}
 		}
